@@ -28,13 +28,3 @@ To run the Zalchion HKDSE Calculator, follow these steps:
 ```bash
    cd ZalchionHKDSECalculator
 
-3. **Compile java files** :
-
-
-### **Customization**
-- Replace `yourusername` in the clone URL with your actual GitHub username.
-- Update the contact information with your email address or preferred contact method.
-- Feel free to add or modify any sections to better fit your project and its features.
-
-### **Conclusion**
-This README template provides a comprehensive overview of your Zalchion HKDSE
