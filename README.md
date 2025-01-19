@@ -23,7 +23,12 @@ To run the Zalchion HKDSE Calculator, follow these steps:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/ZalchionHKDSECalculator.git
-Navigate to the Project Directory:
+
+2. **Navigate to the Project Directory**:
+```bash
+   cd ZalchionHKDSECalculator
+
+3. **Compile java files** :
 
 
 ### **Customization**
