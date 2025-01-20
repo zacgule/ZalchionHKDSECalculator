@@ -443,15 +443,16 @@ public class ZalchionHKDSECalculator {
     }
 
     // Start Quiz
-    public static void startQuiz(Scanner scanner) {
-        boolean continueQuiz = true;
-        while (continueQuiz) {
-            int score = 0;
-            int totalQuestions = 20; // Number of questions in the quiz
-            for (int i = 0; i < totalQuestions; i++) {
-                int questionType = random.nextInt(17); // Randomly select a question type from 17 topics
-                boolean answered = false; // Track if the question has been answered
-                double correctAnswer = 0; // Variable to hold the correct answer
+
+public static void startQuiz(Scanner scanner) {
+    boolean continueQuiz = true;
+    while (continueQuiz) {
+        int score = 0;
+        int totalQuestions = 20; // Number of questions in the quiz
+        for (int i = 0; i < totalQuestions; i++) {
+            int questionType = random.nextInt(17); // Randomly select a question type from 17 topics
+            boolean answered = false; // Track if the question has been answered
+            double correctAnswer = 0; // Variable to hold the correct ans
 
                 while (!answered) {
                     switch (questionType) {
@@ -489,20 +490,21 @@ public class ZalchionHKDSECalculator {
                             correctAnswer = geometricMean(a, b);
                             askQuestion(scanner, "What is the geometric mean of " + a + " and " + b + "? (Type 'help' for assistance or 'calculate' to perform calculations) ", correctAnswer);
                         }
+                       
                         case 6 -> { // Standard Deviation
-                            int n = random.nextInt(2, 6); // Number of values from 2 to 5
-                            double[] values = new double[n];
-                            System.out.print("Enter " + n + " values for standard deviation: ");
-                            for (int j = 0; j < n; j++) {
-                                values[j] = random.nextDouble() * 10; // Random values between 0 and 10
-                                System.out.print(values[j] + " "); // Print the generated values for user reference
-                            }
-                            System.out.println(); // New line for better formatting
-                            correctAnswer = standardDeviation(values); // Calculate the correct answer
-                            // Ask the question using the generated values
-                            askQuestion(scanner, "What is the standard deviation of these values? (Type 'help' for assistance or 'calculate' to perform calculations) ", correctAnswer);
-                            answered = true; // Mark the question as answered
-                        }
+                    int n = random.nextInt(2, 6); // Number of values from 2 to 5
+                    double[] values = new double[n];
+                    System.out.print("Enter " + n + " values for standard deviation: ");
+                    for (int j = 0; j < n; j++) {
+                        values[j] = random.nextDouble() * 10; // Random values between 0 and 10
+                        System.out.print(values[j] + " "); // Print the generated values for user reference
+                    }
+                    System.out.println(); // New line for better formatting
+                    correctAnswer = standardDeviation(values); // Calculate the correct answer
+                    // Ask the question using the generated values
+                    askQuestion(scanner, "What is the standard deviation of these values? (Type 'help' for assistance or 'calculate' to perform calculations) ", correctAnswer);
+                    answered = true; // Mark the question as answered
+                }
                         case 7 -> { // Quadratic Equation Solver
                             double a = random.nextDouble() * 10 + 1; // Coefficient a (1 to 10)
                             double b = random.nextDouble() * 10 - 5; // Coefficient b (-5 to 5)
@@ -587,7 +589,7 @@ public class ZalchionHKDSECalculator {
         }
     }
 
-    // Method to perform calculations during the quiz
+        // Method to perform calculations during the quiz
     private static void performCalculation(Scanner scanner) {
         boolean continueCalculating = true;
         while (continueCalculating) {
