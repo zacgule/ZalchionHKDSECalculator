@@ -547,6 +547,36 @@ public static void startQuiz(Scanner scanner) {
                             correctAnswer = sum;
                             askQuestion(scanner, "What is the sum of the first " + n + " terms of a geometric sequence with first term " + a1 + " and common ratio " + r + "? (Type 'help' for assistance or 'calculate' to perform calculations) ", correctAnswer);
                         }
+                        case 12 -> { // Arithmetic Sequence Sum
+                            double a1 = random.nextDouble() * 10 + 1; // First term (1 to 10)
+                            double d = random.nextDouble() * 5 + 1; // Common difference (1 to 5)
+                            int n = random.nextInt(1, 6); // Number of terms (1 to 5)
+                            correctAnswer = (n / 2.0) * (2 * a1 + (n - 1) * d);
+                            askQuestion(scanner, "What is the sum of the first " + n + " terms of an arithmetic sequence with first term " + a1 + " and common difference " + d + "? (Type 'help' for assistance or 'calculate' to perform calculations) ", correctAnswer);
+                        }
+                        case 13 -> { // Geometric Sequence Sum
+                            double a1 = random.nextDouble() * 10 + 1; // First term (1 to 10)
+                            double r = random.nextDouble() * 2 + 1; // Common ratio (1 to 3)
+                            int n = random.nextInt(1, 6); // Number of terms (1 to 5)
+                            double sum;
+                            if (r == 1) {
+                                sum = a1 * n; // If r is 1, the sum is simply n times the first term
+                            } else {
+                                sum = a1 * (1 - Math.pow(r, n)) / (1 - r);
+                            }
+                            correctAnswer = sum;
+                            askQuestion(scanner, "What is the sum of the first " + n + " terms of a geometric sequence with first term " + a1 + " and common ratio " + r + "? (Type 'help' for assistance or 'calculate' to perform calculations) ", correctAnswer);
+                        }
+                        case 14 -> { // Custom Formula
+                            // Logic for custom formula question can be added here if needed
+                        }
+                        case 15 -> { // View Calculation History
+                            // Logic for viewing calculation history can be added here if needed
+                        }
+                        case 16 -> { // Help
+                            displayHelp();
+                            answered = true; // Mark the question as answered
+                        }
                         default -> System.out.println("Invalid question type.");
                     }
                 }
