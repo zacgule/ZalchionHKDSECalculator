@@ -1,5 +1,6 @@
-# ZachionHKDSECalculator
-# Zalchion HKDSE Calculator
+# **ZachionHKDSECalculator**
+
+## Zalchion HKDSE Calculator
 
 Welcome to the Zalchion HKDSE Mathematics Calculator! This Java-based application is designed to assist students preparing for the Hong Kong Diploma of Secondary Education (HKDSE) Mathematics examination. The calculator provides a variety of mathematical operations and tools to help users solve problems efficiently.
 
@@ -25,6 +26,30 @@ To run the Zalchion HKDSE Calculator, follow these steps:
    git clone https://github.com/yourusername/ZalchionHKDSECalculator.git
 
 2. **Navigate to the Project Directory**:
-```bash
+   ```bash
    cd ZalchionHKDSECalculator
+   
+3. **Compile the Java Files**:
+   ```bash
+   javac *.java
+
+4. **Run the Application and replace with your main class name**:
+   ```bash
+   java MainClassName
+
+## Usage
+
+- Launch the application and follow the on-screen instructions.
+- Select the desired operation from the menu.
+- Input the required values and view the results.
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to the Zalchion HKDSE Calculator, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch and pull requests
+
+I will check the requests , or just drop me a message if it's been a month , thanks 
+
 
