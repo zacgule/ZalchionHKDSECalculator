@@ -50,6 +50,6 @@ Contributions are welcome! If you would like to contribute to the Zalchion HKDSE
 1. Fork the repository.
 2. Create a new branch and pull requests
 
-I will check the requests , or just drop me a message if it's been a month , thanks 
+I will check the requests , or just drop me a message if it's been a month , thanks.
 
 
